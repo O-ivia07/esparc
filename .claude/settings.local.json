@@ -1,0 +1,36 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm --version)",
+      "Bash(npm install *)",
+      "Bash(npx tsc *)",
+      "Bash(npx next *)",
+      "Bash(curl -s -o /dev/null -w '%{http_code}' http://localhost:3217__TRACKED_VAR__)",
+      "Bash(/usr/bin/curl -s -o /dev/null -w '%{http_code}' http://localhost:3217__TRACKED_VAR__)",
+      "Bash(/usr/bin/curl -s \"http://localhost:3217/lender/deal/VH-2026-0421\" -o /tmp/sibling.html -w \"sibling status: %{http_code}\\\\n\")",
+      "Bash(/usr/bin/curl -s \"http://localhost:3217/lender/deal/VH-2026-0421/performance\" -o /tmp/sibling-perf.html -w \"sibling perf \\(should 404\\): %{http_code}\\\\n\")",
+      "Read(//private/tmp/**)",
+      "Bash(brew install *)",
+      "Bash(mkdir -p ~/bin)",
+      "Bash(/usr/bin/curl -L --fail -o ~/bin/cloudflared \"https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-darwin-arm64.tgz\")",
+      "Bash(tar xzf *)",
+      "Bash(mv ~/bin/cloudflared ~/bin/cloudflared.tgz)",
+      "Bash(chmod +x ~/bin/cloudflared)",
+      "Bash(~/bin/cloudflared --version)",
+      "Bash(/usr/bin/curl -s -o /dev/null -w \"dev server: %{http_code}\\\\n\" http://localhost:3000/)",
+      "Bash(/usr/bin/curl -s -o /dev/null -w \"tunnel health: %{http_code}\\\\n\" https://paul-justice-isaac-trackbacks.trycloudflare.com/)",
+      "Bash(/usr/bin/curl -sL -o /dev/null -w \"tunnel: %{http_code}  time: %{time_total}s\\\\n\" https://paul-justice-isaac-trackbacks.trycloudflare.com/)",
+      "Bash(/usr/bin/curl -sL -v --max-time 15 https://paul-justice-isaac-trackbacks.trycloudflare.com/)",
+      "Bash(nslookup paul-justice-isaac-trackbacks.trycloudflare.com 8.8.8.8)",
+      "Bash(/usr/bin/curl -sL --resolve paul-justice-isaac-trackbacks.trycloudflare.com:443:104.16.230.132 --max-time 15 -o /tmp/tunnel-out.html -w \"tunnel: %{http_code}\\\\n\" https://paul-justice-isaac-trackbacks.trycloudflare.com/)",
+      "Read(//tmp/**)",
+      "Bash(nslookup paul-justice-isaac-trackbacks.trycloudflare.com 1.1.1.1)",
+      "Bash(/usr/bin/curl -sL --max-time 15 -o /dev/null -w \"public test: %{http_code}\\\\n\" https://paul-justice-isaac-trackbacks.trycloudflare.com/)",
+      "Bash(npx --yes vercel@latest --version)",
+      "Bash(git -C /Users/dtdubs/ESPARC status)",
+      "Bash(git init *)",
+      "Bash(git -C /Users/dtdubs/ESPARC add -A)",
+      "Bash(git -C /Users/dtdubs/ESPARC -c user.email=\"esparc@local\" -c user.name=\"ESPARC Demo\" commit -m \"Initial commit: E-SPARC pilot demo\")"
+    ]
+  }
+}
